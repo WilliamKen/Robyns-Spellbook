@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- this is the title with image of Robyn -->
+    <header>
+        <img src="Robyn.png" alt="Robyn" id="robyn-image">
+        <h1>Robyn's Spellbook</h1>
+    </header>
+    <!-- below adds AC, HP, and Temp HP -->
+    <div class="stats">
+        <!-- AC -->
+        <div class="stat">
+            <label for="ac">AC:</label>
+            <input type="number" id="ac" value="13">
+        </div>
+    
+        <!-- HP -->
+        <div class="stat">
+            <label for="hp">HP:</label>
+            <input type="number" id="hp" value="20">
+            <input type="number" id="damage" placeholder="">
+            <button id="apply-damage">Apply Damage</button>
+        </div>
+    
+        <!-- Temp HP -->
+        <div class="stat">
+            <label for="tempHp">Temp HP:</label>
+            <input type="number" id="tempHp" value="0">
+        </div>
+    </div>
+
+    <!-- Spell Slots -->
+    <div class="spell-slots">
+        <div class="level-slots" id="level-1-slots">
+            <!-- Level 1 slots go here -->
+        </div>
+        <div class="level-slots" id="level-2-slots">
+            <!-- Level 2 slots go here -->
+        </div>
+        <!-- Add more levels as needed -->
+    </div>
+        
+
+    <!-- Hold the known spells of Robyn fetched from an API-->
+    <div id="spellsContainer">
+        <!-- Spells will be added here by JavaScript -->
+    </div>
+
+    <script src="spellDisplay.js"></script>
+    <script src="spellSlots.js"></script>
+    <script src="main.js"></script>
+    <script src="healthTracker.js"></script>
+
+</body>
+</html>

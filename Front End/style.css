@@ -1,0 +1,113 @@
+header {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+#robyn-image {
+    max-width: 100px; 
+    margin-right: 20px; 
+}
+
+h1 {
+    margin: 0; 
+}
+
+.stats {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.stat {
+    margin: 10px;
+    display: inline-block;
+}
+
+input[type="number"] {
+    width: 50px; 
+}
+
+/* Collapsing Spell list */
+
+.spell-title {
+    cursor: pointer;
+    background-color: #f0f0f0; /* Light gray */
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px;
+}
+
+.spell-details {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-top: none; 
+    margin-bottom: 10px;
+}
+
+.spell-details.collapsed {
+    display: none;
+}
+
+.spell-details:not(.collapsed) {
+    display: block;
+}
+
+.spell-title {
+    padding: 5px 10px;
+    margin: 5px 0; 
+    display: inline-block; 
+    border-radius: 5px; 
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Color for sorted spells */
+.spell-title.spell-level-0 { background-color: lightgray; } 
+.spell-title.spell-level-1 { background-color: lightblue; }
+/* As I level up I can add more colors here
+
+
+/* Spell slot styling */
+
+.level-slots {
+    margin-bottom: 10px;
+}
+
+.spell-slot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50; /* Green */
+    margin-right: 5px;
+}
+
+.spell-slot.used {
+    background-color: #ccc; /* Grey */
+}
+
+.spell-slots {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 20px 0; 
+  
+}
+
+.level-slots {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 10px; 
+}
+
+.spell-slot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50; /* Green */
+    margin: 0 5px; 
+}
