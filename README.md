@@ -1,7 +1,7 @@
 **Robyn's Spellbook: A DnD 5e Character Resource Manager
 Project Overview**
 
-"Robyn's Spellbook" is a dynamic web application designed to enhance the Dungeons & Dragons 5th Edition gameplay, serving as a companion tool for managing the character Robyn Lark, a Loremaster Wizard with a compelling backstory. From a frail, one-armed boy who awakened to his magic in a moment of crisis to a dedicated student of the arcane arts, Robyn's journey is one of discovery and mastery. This application supports his adventures by tracking vital character statistics such as Health, Armor Class, and, most crucially, Spells and Spell Slots, leveraging modern web technologies for a seamless user experience.
+Robyn's Spellbook is a dynamic web application designed to enhance the Dungeons & Dragons 5th Edition gameplay, serving as a companion tool for managing the character Robyn Lark, a Loremaster Wizard with a compelling backstory. From a frail, one-armed boy who awakened to his magic in a moment of crisis to a dedicated student of the arcane arts, Robyn's journey is one of discovery and mastery. This application supports his adventures by tracking vital character statistics such as Health, Armor Class, and, most crucially, Spells and Spell Slots, leveraging modern web technologies for a seamless user experience.
 Technical Highlights
 API Integration and Dynamic Content
 
