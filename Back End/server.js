@@ -5,7 +5,10 @@ const mysql = require('mysql');
 const cors = require('cors');
 const app = express();
 const port = 3000;
+
 app.use(cors()); // Enable CORS for all routes
+
+app.use(express.json());
 
 console.log('Starting script...');
 
@@ -45,3 +48,30 @@ app.listen(port, () => {
 });
 
 console.log('Script end.');
+
+app.post('/spells/updatecurrentDamage', (req, res) => {
+    const { spellId, currentDamage } = req.body;
+    const query = 'UPDATE Spells SET CurrentDamage = ?, IsAltered = 1 WHERE SpellID = ?';
+
+    db.query(query, [currentDamage, spellId], (err, result) => {
+        if (err) {
+            console.error('Error updating spell damage:', err);
+            return res.status(500).send('Failed to update spell damage');
+        }
+        res.json({ message: 'Spell damage updated successfully.' });
+    });
+});
+
+app.post('/spells/updatecurrentSave', (req, res) => {
+    const { spellId, currentSave } = req.body;
+    const query = 'UPDATE Spells SET CurrentSave = ?, IsAltered = 1 WHERE SpellID = ?';
+    
+    db.query(query, [currentSave, spellId], (err, result) => {
+        if (err) {
+            console.error('Error updating spell save:', err);
+            return res.status(500).send('Failed to update spell save');
+        }
+        res.json({ message: 'Spell save updated successfully.' });
+    });
+});
+

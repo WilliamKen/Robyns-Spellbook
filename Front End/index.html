@@ -20,7 +20,7 @@
         <!-- HP -->
         <div class="stat">
             <label for="hp">HP:</label>
-            <input type="number" id="hp" value="20">
+            <input type="number" id="hp" value="29">
             <input type="number" id="damage" placeholder="">
             <button id="apply-damage">Apply Damage</button>
         </div>
@@ -32,6 +32,8 @@
         </div>
     </div>
 
+    <button id="longRest">Long Rest</button>
+
     <!-- Spell Slots -->
     <div class="spell-slots">
         <div class="level-slots" id="level-1-slots">
@@ -42,16 +44,17 @@
         </div>
         <!-- Add more levels as needed -->
     </div>
-        
+
+    <div class="alter-slots"></div>  
 
     <!-- Hold the known spells of Robyn fetched from an API-->
     <div id="spellsContainer">
         <!-- Spells will be added here by JavaScript -->
     </div>
 
+    <script src="main.js"></script>
     <script src="spellDisplay.js"></script>
     <script src="spellSlots.js"></script>
-    <script src="main.js"></script>
     <script src="healthTracker.js"></script>
 
 </body>

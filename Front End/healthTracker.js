@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (changeInHp < 0) {
             // Healing
-            currentHp = Math.min(currentHp - changeInHp, 20); // Change max HP here upon leveling up
+            currentHp = Math.min(currentHp - changeInHp, 29); // Change max HP here upon leveling up
         } else {
             // Taking Damage
             currentTempHp -= changeInHp;

@@ -65,6 +65,7 @@ input[type="number"] {
 /* Color for sorted spells */
 .spell-title.spell-level-0 { background-color: lightgray; } 
 .spell-title.spell-level-1 { background-color: lightblue; }
+.spell-title.spell-level-2 { background-color: rgb(217, 161, 234); }
 /* As I level up I can add more colors here
 
 
@@ -110,4 +111,26 @@ input[type="number"] {
     border-radius: 50%;
     background-color: #4CAF50; /* Green */
     margin: 0 5px; 
+}
+
+/*  Alter Slot Styling */
+
+.alter-slots {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.alter-slot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFA07A; /* Light Salmon */
+    margin-right: 5px;
+}
+
+.alter-slot.used {
+    background-color: #ccc; /* Grey */
 }

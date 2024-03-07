@@ -22,7 +22,8 @@ db.connect(error => {
 });
 
 // Newly learned spells need to be added here
-const robynsKnownSpells = ['Mage Hand', 'Mending', 'Ray of Frost', 'Alarm', 'Burning Hands', 'Detect Magic', 'Feather Fall', 'Find Familiar', 'Ice Knife', 'Magic Missile', "Tasha's Hideous Laughter"];
+const robynsKnownSpells = ['Mage Hand', 'Mending', 'Ray of Frost', 'Alarm', 'Burning Hands', 'Detect Magic', 'Feather Fall', 'Find Familiar', 
+                            'Ice Knife', 'Magic Missile', "Tasha's Hideous Laughter", "Scorching Ray"];
 
 function fetchAndPopulateSpells(apiUrl, knownSpells, connection) {
     fetch(apiUrl)
